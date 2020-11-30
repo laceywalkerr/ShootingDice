@@ -11,8 +11,16 @@ The goal of this exercise is to create classes to represent those various types 
 ### The Setup
 
 1. Clone this repo.
-1. Create a new repo under your github account.
-1. Change the remote origin of the local repo to your new github repo.
+```sh
+git clone git@github.com:nashville-software-school/ShootingDice.git
+```
+2. Create a new repo under your github account.
+3. Change the remote origin of the local repo to your new github repo.
+```sh
+git remote rm origin
+git remote -v
+git remote add origin git@github.com:laceywalkerr/ShootingDice.git
+```
 
 ### The Task
 
