@@ -11,29 +11,55 @@ namespace ShootingDice
             Player player1 = new Player();
             player1.Name = "Bob";
 
+            Player player4 = new SmackTalkingPlayer();
+            player4.Name = "Gus";
+
             Player player2 = new Player();
-            player2.Name = "Sue";
+            player2.Name = "Lura";
 
             player2.Play(player1);
 
             Console.WriteLine("-------------------");
 
             Player player3 = new Player();
-            player3.Name = "Wilma";
+            player3.Name = "Kassie";
 
             player3.Play(player2);
 
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
-            large.Name = "Bigun Rollsalot";
+            large.Name = "Roux";
 
             player1.Play(large);
 
             Console.WriteLine("-------------------");
 
-            List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+            Player player7 = new CreativeSmackTalkingPlayer();
+            player7.Name = "Sadie";
+
+            player7.Play(player4);
+
+            Console.WriteLine("-------------------");
+
+            Player player8 = new SoreLoserPlayer();
+            player8.Name = "JP";
+            try
+            {
+                player8.Play(player4);
+            }
+            catch (RageQuitException)
+            {
+                Console.WriteLine($"{player8.Name} rage quit");
+            }
+
+            List<Player> players = new List<Player>()
+            {
+                player1,
+                player2,
+                player3,
+                player4,
+                large
             };
 
             PlayMany(players);

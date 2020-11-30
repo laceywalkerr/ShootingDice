@@ -35,5 +35,11 @@ namespace ShootingDice
                 Console.WriteLine("It's a tie");
             }
         }
+
+        public void DecalreWinner(Player player1, int roll1, Player player2, int roll2)
+        {
+            Console.WriteLine($"");
+
+        }
     }
 }
