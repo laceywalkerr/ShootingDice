@@ -8,9 +8,9 @@ namespace ShootingDice
     {
         private List<string> _allTaunts = new List<string>()
         {
-            "I roll dice like Snoop Dogg lives life... HIGH!",
-            "I'll have my dice say hello to the I.S.S. as they go by...",
-            "Whats the difference in my dice and Bill Gates bank account? My Dice have bigger numbers!"
+            "Ok Boomer",
+            "Go eat a Tide Pod",
+            "Oh, I get it. That was like a joke, except not funny."
         };
 
         public override void Play(Player other)
